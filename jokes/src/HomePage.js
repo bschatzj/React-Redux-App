@@ -29,7 +29,7 @@ export default function HomePage() {
     return (
         <Home>
             <Head>CHOOSE A JOKE CATEGORY!</Head>
-            <NavLink to={'/Chuck-Noris'}><Links>Chuck Noris</Links></NavLink>
+            <NavLink to={'/Chuck-Noris'}><Links>Ron Swanson</Links></NavLink>
             <NavLink to={'/Dad-Jokes'}><Links>Random Jokes</Links></NavLink>
             <NavLink to={'/Tech-Jokes'}><Links>Tech Jokes</Links></NavLink>
             {/* <NavLink to={'/Bad-Jokes'}><Links>WARNING! NOT FOR WORK JOKES!!!</Links></NavLink> */}
