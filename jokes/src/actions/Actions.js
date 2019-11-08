@@ -18,9 +18,9 @@ export function getJoke() {
     return dispatch => {
         dispatch({ type: FETCH_JOKE_START });
         axios
-            .get('http://api.icndb.com/jokes/random')
+            .get('https://api.chucknorris.io/jokes/random')
             .then(res =>
-                dispatch({ type: FETCH_JOKE_SUCCESS, payload: res.data.value.joke }),
+                dispatch({ type: FETCH_JOKE_SUCCESS, payload: res.data.value }),
             )
             .catch(err => dispatch({ type: FETCH_JOKE_ERROR, payload: err }));
     }
