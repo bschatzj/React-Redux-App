@@ -18,9 +18,9 @@ export function getJoke() {
     return dispatch => {
         dispatch({ type: FETCH_JOKE_START });
         axios
-            .get('http://api.icndb.com/jokes/random')
+            .get('https://ron-swanson-quotes.herokuapp.com/v2/quotes')
             .then(res =>
-                dispatch({ type: FETCH_JOKE_SUCCESS, payload: res.data.value.joke }),
+                dispatch({ type: FETCH_JOKE_SUCCESS, payload: res.data }),
             )
             .catch(err => dispatch({ type: FETCH_JOKE_ERROR, payload: err }));
     }
